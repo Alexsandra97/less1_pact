@@ -2,12 +2,12 @@ package org.example
 
 fun main(){
 
-    val length: Long = 40868600000 //растоение, которое пролетел гагарин в космосе
-    val age: Byte = 27 //Возраст Гагарина на момент полета
-    val partOfDay: Double = 0.075 //какую часть дня Гагарин провел в космосе
-    val seconds: Short = 6480 //количество секунд которое Гагарин провел в космосе
-    val partOfYear: Double = 2.0547945205479453E-4 //какую часть года Гагарин провел в космосе
-    val apogee: Int = 327000 //апогей орбиты Гагарина в метрах
+    val length: Long = 40868600000
+    val age: Byte = 27
+    val partOfDay: Float  = 0.075f
+    val seconds: Short = 6480
+    val partOfYear: Double = 2.0547945205479453E-4
+    val apogee: Int = 327000
 
     println("Растоение, которое пролетел Гагарин в космосе: $length")
     println("Возраст Гагарина на момент полета: $age")
