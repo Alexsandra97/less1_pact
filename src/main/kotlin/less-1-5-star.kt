@@ -2,14 +2,11 @@ package org.example
 
 fun main(){
 
-    var seconds: Int = 6480 //количество секунд которое Гагарин провел в космосе
-    val minute: Int
-    val hour: Int
+    val timeConst: Int = 60
+    val seconds: Int = 6480
+    val minute: Int = (seconds % (timeConst*timeConst)) / timeConst
+    val hour: Int = seconds / (timeConst*timeConst)
+    val secSecond: Int = (seconds % (timeConst*timeConst)) % timeConst
 
-    hour = seconds / 3600
-    minute = (seconds % 3600) / 60
-    seconds = (seconds % 3600) % 60
-
-    println("0$hour:$minute:0$seconds")
-
+    println(String.format("%02d:%02d:%02d", hour, minute, secSecond))
 }
