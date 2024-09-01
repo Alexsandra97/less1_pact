@@ -7,12 +7,12 @@ fun main() {
     val salaryOldWorkers = 30000
     val salaryNewWorkers = 20000
 
-    val AllSalaryOldWork = oldWorkers * salaryOldWorkers
-    val AllSalary = AllSalaryOldWork + newWorkers * salaryNewWorkers
-    val mediumSalary = AllSalary / (oldWorkers + newWorkers)
+    val allSalaryOldWork = oldWorkers * salaryOldWorkers
+    val allSalary = allSalaryOldWork + newWorkers * salaryNewWorkers
+    val mediumSalary = allSalary / (oldWorkers + newWorkers)
 
-    println("Расходы на выплату зарплаты постоянных сотрудников: $AllSalaryOldWork")
-    println("Общие расходы по ЗП после прихода стажеров: $AllSalary")
+    println("Расходы на выплату зарплаты постоянных сотрудников: $allSalaryOldWork")
+    println("Общие расходы по ЗП после прихода стажеров: $allSalary")
     println("Среднюю ЗП одного сотрудника после устройства стажеров: $mediumSalary")
 
 }
